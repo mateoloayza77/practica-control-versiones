@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica de Control de Versiones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <span class="logo__icon">&lt;/&gt;</span>
+        VersionLab
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#caracteristicas" class="nav__link">Características</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre el proyecto</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <p class="hero__badge">Práctica universitaria · Git &amp; GitHub</p>
+        <h1 class="hero__title">
+          Bienvenido a <span class="accent">VersionLab</span>
+        </h1>
+        <p class="hero__text">
+          Un sitio de ejemplo creado para aprender control de versiones.
+          Cada cambio que hagas aquí es una oportunidad perfecta para practicar
+          <strong>commits</strong>, <strong>ramas</strong> y <strong>merges</strong>.
+        </p>
+        <div class="hero__actions">
+          <a href="#caracteristicas" class="btn btn--primary">Explorar</a>
+          <a href="#contacto" class="btn btn--ghost">Saludar</a>
+        </div>
+        <p class="hero__hint" id="counterHint">Aún no has interactuado con el sitio.</p>
+      </div>
+    </section>
+
+    <section class="features" id="caracteristicas">
+      <div class="container">
+        <h2 class="section__title">Características</h2>
+        <p class="section__subtitle">Tres pilares para entender el flujo de trabajo con Git.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="card__icon">📦</div>
+            <h3 class="card__title">Commits</h3>
+            <p class="card__text">Guarda instantáneas de tu trabajo con mensajes claros y descriptivos.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🌿</div>
+            <h3 class="card__title">Ramas</h3>
+            <p class="card__text">Experimenta sin miedo creando ramas aisladas para cada idea.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🔀</div>
+            <h3 class="card__title">Merges</h3>
+            <p class="card__text">Combina el trabajo del equipo y resuelve conflictos con confianza.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container about__inner">
+        <h2 class="section__title">Sobre el proyecto</h2>
+        <p class="section__subtitle">
+          Este proyecto forma parte de una práctica académica sobre control de versiones.
+          El objetivo es modificar estos archivos, registrar los cambios con Git y
+          publicarlos en un repositorio remoto.
+        </p>
+        <ul class="steps">
+          <li class="steps__item"><span class="steps__num">1</span> Clona o inicializa el repositorio.</li>
+          <li class="steps__item"><span class="steps__num">2</span> Realiza cambios en el código.</li>
+          <li class="steps__item"><span class="steps__num">3</span> Haz <code>git add</code> y <code>git commit</code>.</li>
+          <li class="steps__item"><span class="steps__num">4</span> Sube tus cambios con <code>git push</code>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+        <h2 class="section__title">Contacto</h2>
+        <p class="section__subtitle">Déjanos un saludo. Se mostrará aquí mismo (sin enviar nada a un servidor).</p>
+        <form class="form" id="contactForm">
+          <input type="text" class="form__input" id="nameInput" placeholder="Tu nombre" required>
+          <button type="submit" class="btn btn--primary">Enviar</button>
+        </form>
+        <p class="form__message" id="formMessage"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> VersionLab · Práctica de Control de Versiones</p>
+      <p class="footer__sub">Hecho con HTML, CSS y JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
